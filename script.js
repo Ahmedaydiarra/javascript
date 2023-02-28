@@ -518,13 +518,27 @@ while (rep < 10)
     rep++;
 }
 
-const password = prompt("enter your password");
-while(!password)
+// 155
+// 2587
+
+const billes = [22,295,176,440,37,105,10,1100,86,52];
+const tipes = [];
+const tottals = [];
+
+for(let i = 0; i < billes.length - 1; i++)
 {
-    alert("you must enter your password");
-    password = prompt("enter your password");
+    // calTip(billes[i]);
+    // console.log(calTip(billes[i]));
+    const tip = calTip((billes[i]))
+    tipes.push(tip);
+    const total = billes[i] +tip;
+    tottals.push(total);
 }
 
+console.log(total);
+
+
+function calcAverage
 
 
 
