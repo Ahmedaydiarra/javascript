@@ -538,7 +538,9 @@ for(let i = 0; i < billes.length - 1; i++)
 console.log(total);
 
 
-function calcAverage
+let minValue;
+
+
 
 
 
