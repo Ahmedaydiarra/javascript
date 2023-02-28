@@ -463,6 +463,71 @@ console.log(message);
 // retourne une concatenation de firstname est lastname
 // fullname: 
 // mot cle this 
-console.log(this);
+// console.log(this);
+
+
+console.log('exercice squat repetition : 1');
+
+for(let i = 0; i < 11; i++)
+{
+    console.log(`exercice squat repetition : ${i}`);
+}
+
+const itJob = ['developer', 'digital marketing','seo','product manager','web designer', 'business developer'];
+
+
+// extraire le dernier element d'untableau
+// index = longueur tableau - 1
+console.log(itJob[itJob.length - 1]);
+console.log(itJob.at(-1));
+
+
+
+console.log(itJob);
+for(let i = 0; i < itJob.length; i++)
+{
+    console.log(itJob[i]);
+}
+
+for(let i = itJob.length - 1; i > 0; i--)
+{
+    console.log(itJob[i]);
+}
+
+const numbers = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
+for(let i = numbers.length - 1; i >= 0; i--)
+{
+    console.log(numbers[i]);
+}
+
+
+for(let exercice = 1; exercice < 4; exercice++)
+{
+    console.log(`starting exercice ${exercice}`)
+    for(let rep = 1; rep < 6; rep++)
+{
+    console.log(`exercice ${exercice}: lifting weight repetition ${rep}`);
+}
+
+}
+
+let rep = 1
+while (rep < 10)
+{
+    console.log(`lifting weight repetition ${rep}`);
+    rep++;
+}
+
+const password = prompt("enter your password");
+while(!password)
+{
+    alert("you must enter your password");
+    password = prompt("enter your password");
+}
+
+
+
+
+
 
 
