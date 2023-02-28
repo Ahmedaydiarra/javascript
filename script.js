@@ -328,7 +328,7 @@ const players = ["mbappe", "Ney", "halland"];
 // push permet de rajouter un element en dernier dans le tableau
 // unshift permet de rajouter un element en premier
 // pop permet de supprimer un element le dernier
-// shift permet de suuprimer le 1 element
+// shift permet de suprimer le 1 element
 
 players.push("messi");   
 console.table(players);
@@ -346,6 +346,13 @@ console.log(players.indexOf('mbappe'));
 // verifier q'un element exixte
 console.log(players.includes('ahmed'));
 
+
+// const calctips = (bill) => bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// const bills = [125,555,44];
+// const tips = [caltips(bills[0]), calctips(bills[1]), calctips(bills[2])];
+// const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+
+
 function calTip(somme )
 {
     
@@ -359,9 +366,57 @@ console.log(calTip(44));
 const bills = [125, 555, 44]
 const tips = [calTip(125),
     calTip(555),
-    
+
 ]
 
+// const calcAge = 2023 - userObj.birthYear;
+
+// les objets
+const user = ["john", "doe", 24, "developer"];
+console.log(user[3]);
+console.log(user);
+
+
+const userObj = 
+{
+    firstname: 'john',
+    lastname: 'doe',
+    job: 'developer',
+    age: 24,
+};
+console.log(userObj.job);
+
+// assigner une nouvelle donnée a un objet
+userObj.city = 'paris';
+
+userObj.majeur = true;
+userObj.friends = ["issa", 'tidiane'];
+
+
+console.log(userObj);
+
+
+const question = prompt("which information you want to ?");
+// console.log(question);
+
+// console.log(userObj[question])
+// userObj["job"] = userObj.job
+
+
+
+// expression de function
+// calcAge: function()
+// {
+//     return 2023 - userObj.birthYear
+// }
+// console.log(userObj.calcAge());
+
+// fullName: function()
+// {
+    // return `${userObj.firstname} ${userObj.lastname}`;
+// },
+// 
+// 
 
 
   
