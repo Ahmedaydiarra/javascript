@@ -396,7 +396,7 @@ userObj.friends = ["issa", 'tidiane'];
 console.log(userObj);
 
 
-const question = prompt("which information you want to ?");
+// const question = prompt("which information you want to ?");
 // console.log(question);
 
 // console.log(userObj[question])
@@ -418,14 +418,51 @@ const question = prompt("which information you want to ?");
 // 
 // 
 
+const tab1 = 
+{
+    firstname: 'michael',
+    lastname: 'miller',
+    poids: 78,
+    taille: 1.69,
 
-  
+    calcBMI: function()
+    {
+        return tab1.poids / (tab1.taille * tab1.taille)
+    }
+    
+}
+  console.log(tab1.calcBMI());
 
 
+const tab2 =
+{
+    firstname: 'david',
+    lastname: 'smith',
+    poids: 92,
+    taille: 1.95,
 
+    calcBMI: function()
+    {
+        return tab2.poids / (tab2.taille * tab2.taille);
+    }
 
+}
+console.log(tab2.calcBMI());
 
+if(tab1.calcBMI > tab2.calcBMI)
+{
+    console.log("michael a imc le plus eleve");
+}else
+{
+    console.log("david a imc le plus eleve");
+}
+const message = tab1.calcBMI > tab2.calcBMI ? 'michael a imc le plus eleve' : `david a imc le plus eleve`;
+console.log(message);
 
-
+// une methode "fullman"
+// retourne une concatenation de firstname est lastname
+// fullname: 
+// mot cle this 
+console.log(this);
 
 
